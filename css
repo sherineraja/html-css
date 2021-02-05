@@ -1,0 +1,77 @@
+* {
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: #ffcccc;
+    text-align:center;
+}
+#showcase{
+    /*background-color:green;*/
+    color:Black;
+    font: Times,serif normal 18px;
+    font-style: normal;
+    text-align:center;
+    margin:20px;
+    padding:10px;
+    /*border: 5px Black solid;*/
+    position: relative;
+    animation : heading;
+    animation-duration:3s;
+    /*animation-fill-mode:forwards;*/
+}
+@keyframes heading {
+    0% { transform:translateY(-50px); }
+    100% { transform:translateY(0px); }
+}
+.nav{
+    list-style:none;
+}
+.nav li{
+    display:inline-block;
+    font: Ariel 16px normal;
+    padding: 20px;
+}
+.content{
+    color:black;
+    font: Times,serif 12px normal;
+    text-align:center;
+    border: 10px;
+    padding: 20px;
+    position:relative;
+    animation:content;
+    animation-duration: 3s;
+    animation-fill-mode:forwards;
+}
+@keyframes content{
+    0% { transform: translateX(-1000px); }
+    100% { transform: translateX(0px); }
+}
+.ref{
+    display:inline-block;
+    color:black;
+    text-decoration:none;
+    text-align: center;
+    font-size:10px;
+    padding:0.5rem 0.5em;
+    border: #000 solid;
+    opacity:0;
+    animation-name: ref;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    transition-property: transform;
+    transition-duration: 1s;
+}
+.ref:hover{
+    transform:rotateY(180deg);
+}
+@keyframes ref{
+    0%{opacity:0}
+    100%{opacity:1}
+}
+#end{
+    text-align: center;
+    color:crimson;
+    padding:100px;
+}
